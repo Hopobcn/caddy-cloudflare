@@ -11,3 +11,5 @@ FROM caddy:${CADDY_VERSION}
 
 # Copy the custom-built Caddy binary
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
+
+USER 100:100
